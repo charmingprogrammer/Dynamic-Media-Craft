@@ -4,9 +4,11 @@
   --accent: #3b82f6;
   --card-bg: #f3f4f6;
 }
+
 a {
   text-decoration: none;
 }
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -36,7 +38,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   height: 50px;
 }
 
@@ -101,7 +103,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
@@ -109,7 +111,7 @@ body {
   background: var(--card-bg);
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
 }
 
@@ -123,7 +125,9 @@ blockquote {
   padding-left: 1rem;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
@@ -185,14 +189,59 @@ button:hover {
   .nav.show {
     display: flex;
   }
-  .nav a{
-    padding-left:32px;
+
+  .nav a {
+    padding-left: 32px;
     padding-top: 10px;
-    
+
   }
-  
+
 
   .hamburger {
     display: block;
   }
+}
+
+/* Typing effect */
+.typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+  color: #00ffea;
+}
+
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Glowing mouse cursor effect */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #ff006f, #c9cd5a, #00fff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cursor-glow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgb(58, 255, 255) 0%, rgba(17, 255, 96, 0) 60%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  border-radius: 50%;
+  z-index: 1;
 }
