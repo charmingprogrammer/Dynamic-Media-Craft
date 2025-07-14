@@ -1,4 +1,44 @@
+// Typing effect in loop
+const text = "Crafting Your Digital Future";
+const typingEl = document.getElementById("typing-text");
+let index = 0;
+let typing = true;
 
+function typeLoop() {
+    if (typing) {
+        if (index < text.length) {
+            typingEl.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeLoop, 100);
+        } else {
+            typing = false;
+            setTimeout(typeLoop, 1500); // Pause before erasing
+        }
+    } else {
+        if (index > 0) {
+            typingEl.textContent = text.substring(0, index - 1);
+            index--;
+            setTimeout(typeLoop, 50);
+        } else {
+            typing = true;
+            setTimeout(typeLoop, 300); // Pause before typing again
+        }
+    }
+}
+
+typeLoop();
+
+// Cursor follow glow
+const heroSection = document.querySelector(".hero");
+const glow = document.createElement("div");
+glow.classList.add("cursor-glow");
+heroSection.appendChild(glow);
+
+heroSection.addEventListener("mousemove", (e) => {
+    const rect = heroSection.getBoundingClientRect();
+    glow.style.left = `${e.clientX - rect.left - 50}px`;
+    glow.style.top = `${e.clientY - rect.top - 50}px`;
+});
   // Year in footer
   document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -57,3 +97,6 @@
         alert("Something went wrong!");
       });
   });
+
+
+  
