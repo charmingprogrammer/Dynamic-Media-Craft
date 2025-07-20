@@ -228,12 +228,13 @@ button:hover {
   overflow: hidden;
 }
 
-/* Gradient text */
+/* Gradient text 
 .gradient-text {
   background: linear-gradient(90deg, #ff006f, #c9cd5a, #00fff7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+*/
 
 .cursor-glow {
   position: absolute;
