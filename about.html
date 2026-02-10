@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Dynamic Media Craft</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      /* ABOUT – MATCHES PRICING PAGE VISUALLY */
+      body {
+        background:
+          radial-gradient(
+            1200px 600px at top,
+            rgba(0, 255, 204, 0.08),
+            transparent
+          ),
+          #0b0f14;
+      }
+
+      .about-section {
+        padding: 80px 20px;
+      }
+
+      .about-header {
+        text-align: center;
+        max-width: 760px;
+        margin: 0 auto 60px;
+      }
+
+      .about-header h2 {
+        font-size: 34px;
+        margin-bottom: 12px;
+        color: white;
+      }
+
+      .about-header .subtitle {
+        font-size: 15px;
+        opacity: 0.85;
+        line-height: 1.6;
+        color: white;
+      }
+
+      /* Same grid logic as pricing */
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-bottom: 70px;
+      }
+
+      /* SAME CARD FEEL AS PRICING */
+      .about-card {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 30px;
+        border-radius: 14px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        color: white;
+      }
+      .about-card:hover {
+        border-color: rgba(0, 255, 204, 0.4);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .dark .about-card {
+        border-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .about-card h3 {
+        font-size: 20px;
+        margin-bottom: 14px;
+      }
+
+      .about-card p {
+        font-size: 14.5px;
+        line-height: 1.7;
+        opacity: 0.85;
+      }
+
+      .about-card .highlight {
+        margin-top: 12px;
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .about-card .muted {
+        margin-top: 10px;
+        opacity: 0.7;
+      }
+
+      /* Lists same density as pricing bullets */
+      .about-list {
+        padding-left: 18px;
+        margin-top: 8px;
+      }
+
+      .about-list li {
+        margin-bottom: 8px;
+        font-size: 14.5px;
+        opacity: 0.85;
+      }
+
+      /* PROCESS – styled like a feature row */
+      .about-process {
+        margin-bottom: 70px;
+        text-align: center;
+      }
+
+      .about-process h3 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: white;
+      }
+
+      .process-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 18px;
+      }
+
+      .step {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 14px 16px;
+        border-radius: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        border: 1px dashed rgba(0, 0, 0, 0.15);
+        color: white;
+      }
+
+      .step:hover {
+        border-color: rgba(0, 255, 204, 0.4);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .dark .step {
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+
+      /* FOOTER CTA – SAME AS PRICING CTA ZONE */
+      .about-footer {
+        text-align: center;
+        max-width: 680px;
+        margin: 0 auto;
+      }
+
+      .fit-note {
+        font-size: 14px;
+        opacity: 0.75;
+        margin-bottom: 26px;
+        color: white;
+      }
+
+      /* Mobile */
+      @media (max-width: 768px) {
+        .about-header h2 {
+          font-size: 28px;
+        }
+
+        .about-card {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="about-section">
+      <div class="container">
+        <div class="about-header">
+          <h2>About Dynamic Media Craft</h2>
+          <p class="subtitle">
+            We don’t just create content. We build growth systems that turn
+            attention into trust — and trust into revenue.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Who We Are</h3>
+            <p>
+              Dynamic Media Craft is a growth-focused digital agency helping
+              founders, coaches, service businesses, and startups build
+              authority and scale online with clarity.
+            </p>
+            <p class="muted">We work as growth partners — not vendors.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Why We Exist</h3>
+            <p>
+              Most businesses fail online because they post without strategy,
+              chase trends, and rely on disconnected freelancers.
+            </p>
+            <p class="highlight">
+              Our job is simple: turn attention into trust, trust into leads,
+              and leads into growth.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>What Makes Us Different</h3>
+            <ul class="about-list">
+              <li>Strategy before execution</li>
+              <li>Transparent pricing & clear deliverables</li>
+              <li>System-based growth, not random posting</li>
+              <li>Founder-level involvement</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3>What We Actually Do</h3>
+            <ul class="about-list">
+              <li>Short-form content strategy & execution</li>
+              <li>Social media growth systems</li>
+              <li>Brand positioning & authority building</li>
+              <li>Performance tracking & reporting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-process">
+          <h3>Our Process</h3>
+
+          <div class="process-steps">
+            <div class="step">Onboarding & Research</div>
+            <div class="step">Strategy & Roadmap</div>
+            <div class="step">Execution</div>
+            <div class="step">Optimization</div>
+            <div class="step">Growth</div>
+          </div>
+        </div>
+
+        <div class="about-footer">
+          <p class="fit-note">
+            We work best with businesses serious about long-term growth. We may
+            not be a fit if you’re only looking for cheap posting or instant
+            virality.
+          </p>
+
+          <a href="./Users_form.html" class="cta-btn">Start Your Project</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

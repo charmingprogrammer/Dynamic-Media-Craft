@@ -1,283 +1,392 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Dynamic Media Craft offers modern web development and app development services." />
+    <meta
+      name="description"
+      content="Dynamic Media Craft offers modern web development and app development services."
+    />
     <meta property="og:title" content="Dynamic Media Craft" />
-    <meta property="og:description" content="Creative digital agency specializing in web and app development." />
+    <meta
+      property="og:description"
+      content="Creative digital agency specializing in web and app development."
+    />
     <meta property="og:type" content="website" />
     <title>Dynamic Media Craft</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/9e0ab445c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <!-- Header -->
     <header class="header">
-        <div class="container nav-container">
-            <div style="display: flex; align-items: center;">
-                <img src="./DMC.png" alt="dynamic media craft logo"
-                    style="width: 50px; height: 50px; border-radius: 10px;">
-                <h5 style="margin-left: 10px; ">Dynamic Media Craft</h5>
-            </div>
-            <nav class="nav" id="nav-menu">
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#ready">Ready-Made Solutions</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <div class="dark-toggle" id="darkToggle"><i class="fas fa-adjust"></i></div>
-            <div class="hamburger" id="hamburger">☰</div>
+      <div class="container nav-container">
+        <div style="display: flex; align-items: center">
+          <img
+            src="./DMC.png"
+            alt="dynamic media craft logo"
+            style="width: 50px; height: 50px; border-radius: 10px"
+          />
+          <h5 style="margin-left: 10px">Dynamic Media Craft</h5>
         </div>
+        <nav class="nav" id="nav-menu">
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#blog">Blog</a>
+          <a href="./pricing.html">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="dark-toggle" id="darkToggle">
+          <i class="fas fa-adjust"></i>
+        </div>
+        <div class="hamburger" id="hamburger">☰</div>
+      </div>
     </header>
+    <!-- Hero -->
 
     <section class="hero">
-        <div class="container">
-            <h2 id="typing-text" class="typing gradient-text shadow-text"
-                style="font-size: 2.8rem; font-weight: bold; margin-bottom: 1rem;"></h2>
-            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 1.5rem;">At Dynamic Media Craft, we turn your
-                vision into a powerful digital experience. From cutting-edge websites to robust mobile apps, we build
-                solutions that drive results.</p>
-            <a href="https://wa.me/+918292857826?text=I want your services please provid me more details" class="cta"
-                style="padding: 0.75rem 1.5rem; font-weight: 600; font-size: 1rem; text-decoration: none;">Start Your
-                Journey Now</a>
-            <p style="margin-top: 1rem; font-size: 0.95rem; color: #f4f4f4;">Trusted by businesses, entrepreneurs, and
-                startups worldwide.</p>
-        </div>
-    </section>
+      <div class="fluid-bg"></div>
 
-    <section id="about" class="section" style="padding-bottom: 2rem;">
-        <div class="container">
-            <h3>About Us</h3>
-            <p>We are a passionate team of developers who thrive on turning bold ideas into brilliant digital products.
-                Whether you're a startup or an established business, we help you grow through modern, scalable, and
-                user-focused solutions.</p>
-            <p>Our mission is to blend creativity with cutting-edge technology to deliver meaningful results. We value
-                transparency, collaboration, and innovation.</p>
-        </div>
+      <div class="hero-content">
+        <h1
+          id="typing-text"
+          class="typing gradient-text shadow-text"
+          style="font-size: 2.8rem; font-weight: bold; margin-bottom: 1rem"
+        ></h1>
+        <p style="max-width: 700px; margin: 0 auto 1.5rem; color: white">
+          At Dynamic Media Craft, we turn your vision into a powerful digital
+          experience. From cutting-edge websites to robust mobile apps, we build
+          solutions that drive results.
+        </p>
+        <a
+          href="./Users_form.html"
+          class="cta"
+          style="
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+          "
+          >Start Your Journey Now</a
+        >
+        <p style="margin-top: 1rem; font-size: 0.95rem; color: #f4f4f4">
+          Trusted by businesses, entrepreneurs, and startups worldwide.
+        </p>
+      </div>
     </section>
+    <!-- Services -->
+    <section class="timeline-section" id="services">
+      <div class="container">
+        <h2 class="section-title">How Our Service Works</h2>
+        <p class="section-subtitle">
+          A clear, step-by-step process with transparent pricing and
+          deliverables. No hidden costs. No confusion.
+        </p>
 
-    <section id="services" class="section">
-        <div class="container">
-            <h3>Our Services</h3>
-            <div class="grid">
-                <div class="card">
-                    <h4>Web Development</h4>
-                    <p>Fast, responsive, SEO-optimized websites using modern stacks like HTML5, CSS3, JavaScript, and
-                        more.</p>
+        <div class="timeline">
+          <div id="diagram_image">
+            <img
+              src="./One_time_setup.png"
+              alt="One time setup diagram"
+              style="width: 100%; margin: 20px auto; display: block"
+            />
+          </div>
+
+          <!-- PRICING -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Keep Growing with us</h3>
+
+              <div class="pricing-grid">
+                <!-- BASIC -->
+                <div class="pricing-card">
+                  <h4>Basic</h4>
+                  <p class="price">₹1499 / month</p>
+
+                  <ul>
+                    <li>Reels: 2 per month</li>
+                    <li>Posts: 4 per month</li>
+                    <li>Manage and maintain website</li>
+                    <li>Google Presence Check</li>
+                    <li>WhatsApp support</li>
+                  </ul>
+
+                  <a href="./Users_form.html" class="cta-btn">Start Now</a>
+
+                  <span class="pricing-for">
+                    Best for: Beginners & small local businesses
+                  </span>
                 </div>
-                <div class="card">
-                    <h4>App Development</h4>
-                    <p>Robust mobile apps for iOS and Android that combine performance, scalability, and sleek design.
-                    </p>
+
+                <!-- GROWTH -->
+                <div class="pricing-card">
+                  <h4>Growth</h4>
+                  <p class="price">₹3999 / month</p>
+
+                  <ul>
+                    <li>Reels: 3 per month</li>
+                    <li>Posts: 5 per month</li>
+                    <li>Calls: 20 per month</li>
+                    <li>Manage and maintain website</li>
+                    <li>Priority WhatsApp support</li>
+                  </ul>
+                  <a href="./Users_form.html" class="cta-btn">Start Now</a>
+                  <span class="pricing-for">
+                    Best for: Growing brands & creators
+                  </span>
                 </div>
+
+                <!-- SUPER GROWTH -->
+                <div class="pricing-card featured">
+                  <h4>Super Growth</h4>
+                  <p class="price">₹4999 / month</p>
+
+                  <ul>
+                    <li>Reels: 5 per month</li>
+                    <li>Posts: 15 per month</li>
+                    <li>Calls: 100 per month</li>
+                    <li>Monthly performance report</li>
+                    <li>Growth-focused strategy</li>
+                  </ul>
+                  <a href="./Users_form.html" class="cta-btn">Start Now</a>
+                  <span class="pricing-for">
+                    Best for: Serious businesses & personal brands
+                  </span>
+                </div>
+              </div>
+
+              <p class="pricing-note">
+                💡 All plans are monthly. No long-term lock-in. Upgrade anytime.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="ready" class="section">
-        <div class="container">
-            <h3>Ready-Made Digital Products</h3>
-            <p>Buy once, launch instantly! Professionally crafted digital products for entrepreneurs, startups, and
-                small businesses who want speed, quality, and affordability — all in one.</p>
-            <div class="grid">
-                <div class="card">
-                    <h4>Manoarya Educational Website</h4>
-                    <p style="font-weight: bold; font-size: 1.2rem; color: #2563eb;">₹4,999 <span
-                            style="text-decoration: line-through; font-size: 0.9rem; color: gray;">₹9,499</span></p>
-                    <ul>
-                        <li>Educational Web Platform</li>
-                        <li>Clean UI</li>
-                        <li>Multiple Course Modules</li>
-                        <li>Beginner-Friendly Content</li>
-                    </ul>
-                    <button onclick="window.open('https://charmingprogrammer.github.io/Manoarya/')">View
-                        Demo</button>
-                    <button onclick="window.open('upi://pay?pa=charmingprogrammer@okhdfcbank&pn=ManoharAnand&cu=INR&am=2499')">Buy Now</button>
-                </div>
-                <!-- MCC Template -->
-                <div class="card">
-                    <h4>MCC Computer Classes</h4>
-                    <p style="font-weight: bold; font-size: 1.2rem; color: #2563eb;">₹2,499 <span
-                            style="text-decoration: line-through; font-size: 0.9rem; color: gray;">₹4,499</span></p>
-                    <ul>
-                        <li>Modern UI</li>
-                        <li>Student & Faculty Section</li>
-                        <li>Responsive & Easy Navigation</li>
-                        <li>Class & Subject Pages</li>
-                    </ul>
-                    <button onclick="window.open('https://charmingprogrammer.github.io/Manoarya/MCC/')">View
-                        Demo</button>
-                    <button onclick="window.location.href='#contact'">Buy Now</button>
-                </div>
-                <!-- HCC Template -->
-                <div class="card">
-                    <h4>HCC Institute Website</h4>
-                    <p style="font-weight: bold; font-size: 1.2rem; color: #2563eb;">₹2,999 <span
-                            style="text-decoration: line-through; font-size: 0.9rem; color: gray;">₹4,999</span></p>
-                    <ul>
-                        <li>Course Showcase</li>
-                        <li>Student & Testimonial Section</li>
-                        <li>Clean Educational Layout</li>
-                        <li>Contact & Location Info</li>
-                    </ul>
-                    <button onclick="window.open('https://charmingprogrammer.github.io/HCC/')">View
-                        Demo</button>
-                    <button onclick="window.location.href='#contact'">Buy Now</button>
-                </div>
-                <!-- Ecommerce app Template -->
-                <div class="card">
-                    <h4>Ecommerce App (Ready for production)</h4>
-                    <p style="font-weight: bold; font-size: 1.2rem; color: #2563eb;">₹19,999 <span
-                            style="text-decoration: line-through; font-size: 0.9rem; color: gray;">₹49,000</span></p>
-                    <ul>
-                        <li>Add the products</li>
-                        <li>Clean UI</li>
-                        <li>Search and categories sections</li>
-                        <li>Ready to launch the business</li>
-                    </ul>
-                    <button onclick="window.open('https://drive.google.com/file/d/1QqDunm6u2sAxxy_T8OPtbIKYNIVVU46R/view?usp=drive_link')">View
-                        Demo</button>
-                    <button onclick="window.location.href='#contact'">Buy Now</button>
-                </div>
-                <!-- News Template -->
-                <div class="card">
-                    <h4>News App</h4>
-                    <p style="font-weight: bold; font-size: 1.2rem; color: #2563eb;">₹9,999 <span
-                            style="text-decoration: line-through; font-size: 0.9rem; color: gray;">₹4,999</span></p>
-                    <ul>
-                        <li>Clean News UI</li>
-                        <li>Easy news adding</li>
-                        <li>Users generated news</li>
-                        <li>Ready to launch the news platform</li>
-                    </ul>
-                    <button onclick="window.open('https://drive.google.com/file/d/12RauDKPy8NtZ5eb2xRqY0oExRY7GJ_fE/view?usp=drive_link')">View
-                        Demo</button>
-                    <button onclick="window.location.href='#contact'">Buy Now</button>
-                </div>
-                <!-- Coaching Template -->
-                <div class="card">
-                    <h4>Coaching App</h4>
-                    <p style="font-weight: bold; font-size: 1.2rem; color: #2563eb;">₹XXXX <span
-                            style="text-decoration: line-through; font-size: 0.9rem; color: gray;">₹XXXX</span></p>
-                    <ul>
-                        <li>clean and modern UI</li>
-                        <li>Courses sections</li>
-                        <li>New students admissions</li>
-                        <li>Ready to launch your coaching online</li>
-                    </ul>
-                    <button onclick="alert('Coming Soon')"")">Coming soon</button>
-                    <!-- <button onclick="window.location.href='#contact'">Buy Now</button> -->
-                </div>
-            </div>
-            <p style="margin-top: 2rem; font-size: 0.9rem; color: #555;"><strong>Terms & Highlights:</strong><br>✔ Setup
-                within 2 working days<br>✔ One-time cost — lifetime ownership<br>✔ Includes installation help & minor
-                text/logo edits<br>✔ Hosting & domain extra (or use your own)<br>✔ Full source code provided <br>✔
-                Custom features charged based on the hourly basis | 500 Rs/hr</p>
-        </div>
-    </section>
-
+    <!-- Portfolio -->
     <section id="portfolio" class="section">
-        <div class="container">
-            <h3>Portfolio</h3>
-            <p>Here are some of the projects we've proudly delivered:</p>
-            <div class="grid">
-                <div class="card">
-                    <h4>SwiftCart eCommerce</h4>
-                    <p>A mobile-first shopping platform with payment gateway and admin panel integration.</p>
-                </div>
-                <div class="card">
-                    <h4>EduSpark LMS</h4>
-                    <p>A learning management system for institutes to manage students, courses, and online classes.</p>
-                </div>
-                <div class="card">
-                    <h4>YummyBite Food Ordering App</h4>
-                    <p>Food ordering app with real-time delivery tracking, restaurant dashboard, and customer feedback.
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-subtitle">
+          Here are some of the projects we've proudly delivered:
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h4>SwiftCart eCommerce</h4>
+            <p>
+              A mobile-first shopping platform with payment gateway and admin
+              panel integration.
+            </p>
+          </div>
+          <div class="card">
+            <h4>EduSpark LMS</h4>
+            <p>
+              A learning management system for institutes to manage students,
+              courses, and online classes.
+            </p>
+          </div>
+          <div class="card">
+            <h4>YummyBite Food Ordering App</h4>
+            <p>
+              Food ordering app with real-time delivery tracking, restaurant
+              dashboard, and customer feedback.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="testimonials" class="section">
-        <div class="container">
-            <h3>What Clients Say</h3>
-            <blockquote>
-                “DMC helped us launch our app in record time with stellar design and performance!”<br />
-                — Rohan Kumar, Founder of AppTrail
-            </blockquote>
-            <blockquote>
-                “Their design team brought our vision to life — sleek, fast, and conversion-focused.”<br />
-                — Priya Mehta, Marketing Head at SwiftMart
-            </blockquote>
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle">
+          Real results. Real businesses. Real growth.
+        </p>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://i.pravatar.cc/80?img=12" alt="Client" />
+              <div>
+                <h4>Brayan</h4>
+                <span>Founder, SaaS Startup</span>
+              </div>
+            </div>
+
+            <p class="testimonial-text">
+              Dynamic Media Craft didn’t just create content — they built a
+              system. Our inbound leads increased within the first 30 days.
+            </p>
+
+            <div class="testimonial-footer">
+              <div class="stars">★★★★</div>
+              <span class="testimonial-for"
+                >Best for: Product-based founders</span
+              >
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://i.pravatar.cc/80?img=32" alt="Client" />
+              <div>
+                <h4>Ankita Verma</h4>
+                <span>Personal Brand Coach</span>
+              </div>
+            </div>
+
+            <p class="testimonial-text">
+              Their growth strategy + reels execution saved me months of trial
+              and error. My Instagram finally converts.
+            </p>
+
+            <div class="testimonial-footer">
+              <div class="stars">★★★★★</div>
+              <span class="testimonial-for">Best for: Coaches & creators</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://i.pravatar.cc/80?img=45" alt="Client" />
+              <div>
+                <h4>Molly Wilshon</h4>
+                <span>Agency Owner</span>
+              </div>
+            </div>
+
+            <p class="testimonial-text">
+              We outsourced growth completely to DMC. Clear reporting, clear
+              execution, zero confusion.
+            </p>
+
+            <div class="testimonial-footer">
+              <div class="stars">★★★★★</div>
+              <span class="testimonial-for"
+                >Best for: Agencies & service brands</span
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="blog" class="section">
-        <div class="container">
-            <h3>From Our Blog</h3>
-            <div class="grid">
-                <a href="https://www.linkedin.com/pulse/5-reasons-why-your-business-needs-website-even-youre-qmeqc" class="card">
-                    <h4>5 Reasons Why Your Business Needs a Website</h4>
-                    <p>Discover how having a modern, mobile-friendly website helps boost your credibility and reach.</p>
-                </a>
-                <a href="https://www.linkedin.com/pulse/mobile-app-trends-2025-you-shouldnt-ignore-dynamicmediacraft-eebwc" class="card">
-                    <h4>Mobile App Trends in 2025</h4>
-                    <p>Stay ahead with the latest app development practices and technologies shaping user experiences.
-                    </p>
-                </a>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Latest from Our Blog</h2>
+        <div class="grid">
+          <a
+            href="https://www.linkedin.com/pulse/5-reasons-why-your-business-needs-website-even-youre-qmeqc"
+            class="card"
+          >
+            <h4>5 Reasons Why Your Business Needs a Website</h4>
+            <p>
+              Discover how having a modern, mobile-friendly website helps boost
+              your credibility and reach.
+            </p>
+          </a>
+          <a
+            href="https://www.linkedin.com/pulse/mobile-app-trends-2025-you-shouldnt-ignore-dynamicmediacraft-eebwc"
+            class="card"
+          >
+            <h4>Mobile App Trends in 2025</h4>
+            <p>
+              Stay ahead with the latest app development practices and
+              technologies shaping user experiences.
+            </p>
+          </a>
         </div>
+      </div>
     </section>
 
     <section id="contact" class="section">
-        <div class="container">
-            <h3>Contact Us</h3>
-            <p>Let's bring your project to life. Reach out via the form below and we’ll get back to you within 24 hours.
-            </p>
-            <!-- <form id="contact-form">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">
+          Let's bring your project to life. Reach out via the form below and
+          we’ll get back to you within 24 hours.
+        </p>
+        <!-- <form id="contact-form">
                 <input name="name" type="text" placeholder="Your Name" required />
                 <input name="email" type="email" placeholder="Your Email" required />
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Let’s Build Together</button>
             </form> -->
-            <button type="submit" onclick="window.open('tel:918292857826')">Contact Now</button>
-        </div>
+        <button
+          id="bottom_btn"
+          type="submit"
+          onclick="
+            window.open(
+              'https://wa.me/+918292857826?text=I want your services please provide me more details',
+              '_blank',
+            )
+          "
+        >
+          Contact Now
+        </button>
+      </div>
     </section>
 
-
     <footer class="footer">
-        <p>&copy; <span id="year"></span> Dynamic Media Craft. All rights reserved.</p>
-        <p><a href="about.html">About</a> | <a href="privacy_policy.html">Privacy Policy</a> | <a
-                href="terms&condition.html">Terms of Service</a></p>
+      <p>
+        &copy; <span id="year"></span> Dynamic Media Craft. All rights reserved.
+      </p>
+      <p>
+        <a href="about.html">About</a> |
+        <a href="privacy_policy.html">Privacy Policy</a> |
+        <a href="terms&condition.html">Terms of Service</a> |
+        <a href="Refund.html">Refund / Cancellation Policy</a>
+      </p>
 
-        <!-- Social Media Section -->
-        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
-            <a href="https://www.instagram.com/dynamicmediacraftofficial/" target="_blank"
-                style="text-decoration: none; color: #E1306C; font-weight: bold;"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/dynamicmediacraft" target="_blank"
-                style="text-decoration: none; color: #0A66C2; font-weight: bold;"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/@DynamicMediaCraft" target="_blank"
-                style="text-decoration: none; color: #FF0000; font-weight: bold;"><i class="fab fa-youtube"></i></a>
-            <!-- <a href="https://twitter.com/yourprofile" target="_blank" style="text-decoration: none; color: #1DA1F2; font-weight: bold;"><i class="fab fa-twitter"></i></a>
+      <!-- Social Media Section -->
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 1.5rem;
+          flex-wrap: wrap;
+          margin-top: 1rem;
+        "
+      >
+        <a
+          href="https://www.instagram.com/dynamicmediacraftofficial/"
+          target="_blank"
+          style="text-decoration: none; color: #e1306c; font-weight: bold"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/dynamicmediacraft"
+          target="_blank"
+          style="text-decoration: none; color: #0a66c2; font-weight: bold"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@DynamicMediaCraft"
+          target="_blank"
+          style="text-decoration: none; color: #ff0000; font-weight: bold"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <!-- <a href="https://twitter.com/yourprofile" target="_blank" style="text-decoration: none; color: #1DA1F2; font-weight: bold;"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.facebook.com/yourprofile" target="_blank" style="text-decoration: none; color: #1877F2; font-weight: bold;"><i class="fab fa-facebook"></i></a> -->
-        </div>
+      </div>
     </footer>
-
 
     <button class="back-to-top" id="backToTop">↑</button>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

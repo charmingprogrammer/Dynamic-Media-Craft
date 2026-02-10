@@ -18,7 +18,12 @@ body {
 }
 
 .dark {
-  --bg: #111827;
+  --bg: radial-gradient(
+            1200px 600px at top,
+            rgba(0, 255, 204, 0.08),
+            transparent
+          ),
+          #0b0f14;;
   --text: #f9fafb;
   --card-bg: #1f2937;
 }
@@ -26,20 +31,19 @@ body {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem;
 }
 
 .header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
-  background: var(--bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  height: 50px;
+    height: 50px;
 }
 
 .nav-container {
@@ -47,6 +51,10 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.scrolled {
+  background: var(--bg);
 }
 
 .nav a {
@@ -63,6 +71,7 @@ body {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
+  margin-right: 40px;
 }
 
 .dark-toggle {
@@ -70,11 +79,69 @@ body {
   margin-left: 1rem;
 }
 
-.hero {
-  background: linear-gradient(to right, #3b82f6, #9333ea);
+/* .hero {
+ background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
   color: #fff;
   text-align: center;
   padding: 6rem 1rem;
+} */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #0b0f1a;
+}
+
+.fluid-bg {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 20% 30%, #4f8cff, transparent 40%),
+    radial-gradient(circle at 80% 20%, #7b5cff, transparent 45%),
+    radial-gradient(circle at 50% 80%, #00ffd5, transparent 40%);
+  filter: blur(120px);
+  animation: fluidMove 18s ease-in-out infinite alternate;
+}
+
+@keyframes fluidMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(-10%, -5%) scale(1.1);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 64px);
+  margin-bottom: 16px;
+}
+
+.hero p {
+  color: #9aa4c7;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.hero-btn {
+  background: #4f8cff;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
 }
 
 .hero h2 {
@@ -84,8 +151,8 @@ body {
 
 .cta {
   display: inline-block;
-  background: #fff;
-  color: #3b82f6;
+  background: #3257fc;
+  color: #fff;
   padding: 0.7rem 1.5rem;
   border-radius: 999px;
   margin-top: 1.5rem;
@@ -94,7 +161,7 @@ body {
 }
 
 .cta:hover {
-  background: #f3f4f6;
+  background: #17284a;
 }
 
 .section {
@@ -113,6 +180,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
+  color: var(--text);
 }
 
 .card:hover {
@@ -152,10 +220,11 @@ button:hover {
 .footer {
   text-align: center;
   padding: 2rem 1rem;
-  border-top: 1px solid #ccc;
-  margin-top: 2rem;
-}
 
+}
+.footer a {
+  color: #003c6a;
+}
 .back-to-top {
   position: fixed;
   bottom: 1.5rem;
@@ -170,36 +239,6 @@ button:hover {
   display: none;
   width: 50px;
   height: 50px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-    flex-direction: column;
-    background: var(--bg);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    border-left: 1px solid #ccc;
-    padding: 1rem;
-  }
-
-  .nav.show {
-    display: flex;
-  }
-
-  .nav a {
-    padding-left: 32px;
-    padding-top: 10px;
-
-  }
-
-
-  .hamburger {
-    display: block;
-  }
 }
 
 /* Typing effect */
@@ -227,16 +266,18 @@ button:hover {
   position: relative;
   overflow: hidden;
 }
+.hero p{
+  font-size: 1.2rem;
+}
 
-/* Gradient text 
+/* Gradient text */
 .gradient-text {
-  background: linear-gradient(90deg, #ff006f, #c9cd5a, #00fff7);
+  background: linear-gradient(90deg, #f6eef1f5, #c9cd5a, #00fff7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-*/
 
-.cursor-glow {
+/* .cursor-glow {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -245,4 +286,272 @@ button:hover {
   mix-blend-mode: screen;
   border-radius: 50%;
   z-index: 1;
+} */
+
+.timeline-section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 10px auto 60px;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.timeline-content h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.timeline-content p {
+  line-height: 1.6;
+}
+
+.timeline-list {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.timeline-list li {
+  margin-bottom: 8px;
+  color: #d1d5db;
+}
+
+.highlight-note {
+  display: inline-block;
+  margin-top: 15px;
+  color: #a5b4fc;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.pricing-card {
+   background:
+    radial-gradient(circle at 20% 30%, #4f8cff, transparent 40%),
+    radial-gradient(circle at 80% 20%, #7b5cff, transparent 45%),
+    radial-gradient(circle at 50% 100%, #40afbb, transparent 60%);
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.pricing-card.featured {
+  border: 2px solid #4f46e5;
+  
+}
+
+.pricing-card h4 {
+  font-size: 22px;
+}
+
+.price {
+  font-size: 28px;
+  margin: 10px 0 20px;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+}
+
+.pricing-for {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.pricing-note {
+  margin-top: 30px;
+}
+
+
+.setup-section {
+  padding: 80px 20px;
+  background: #0b0b0b;
+}
+
+.setup-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.setup-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+
+}
+
+ 
+.cta-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 14px 0;
+  background:
+    radial-gradient(circle at 20% 30%, #4f8cff, transparent 40%),
+    radial-gradient(circle at 80% 20%, #7b5cff, transparent 45%),
+    radial-gradient(circle at 50% 80%, #00ffd5, transparent 40%);
+  color: black;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #6366f1;
+  transform: translateY(-2px);
+}
+
+.testimonials-section {
+  padding: 80px 20px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.testimonial-card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.testimonial-header img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-header h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.testimonial-header span {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.stars {
+  color: #facc15;
+  font-size: 16px;
+}
+
+.testimonial-for {
+  opacity: 0.7;
+}
+
+#bottom_btn {
+  background:
+    radial-gradient(circle at 20% 30%, #4f8cff, transparent 40%),
+    radial-gradient(circle at 80% 20%, #7b5cff, transparent 45%),
+    radial-gradient(circle at 50% 80%, #00ffd5, transparent 40%);
+  color: black;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  height: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: var(--bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    border-left: 1px solid #ccc;
+    padding: 1rem;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav a {
+    padding-left: 32px;
+    padding-top: 10px;
+
+  }
+
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero p{
+    font-size: 0.8rem;
+  }
+
+  
+}
+
+#backToTop{
+   background:
+    radial-gradient(circle at 20% 30%, #4f8cff, transparent 40%),
+    radial-gradient(circle at 80% 20%, #7b5cff, transparent 45%),
+    radial-gradient(circle at 50% 80%, #0a5a4d, transparent 40%);
+    color: black;
+    font-weight: bolder;
 }
